@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a class="brand" href="#home">TravelWorld</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="#booking">Booking</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HOME PAGE -->
+
+    <section id="home">
+        <div class="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1>Explore The World</h1>
+                <p>Find the perfect getaway with curated travel packages and personalized support.</p>
+                <button class="btn" onclick="scrollToBooking()">Book Now</button>
+            </div>
+        </div>
+
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Paris</h3>
+                <p>City of love</p>
+            </div>
+
+            <div class="card">
+                <h3>Bali</h3>
+                <p>Beautiful beaches</p>
+            </div>
+
+            <div class="card">
+                <h3>Dubai</h3>
+                <p>Luxury travel</p>
+            </div>
+
+            <div class="card">
+                <h3>Maldives</h3>
+                <p>Tropical paradise</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DESTINATIONS PAGE -->
+
+    <section id="destinations">
+
+        <h2 class="section-title">Destinations</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Paris</h3>
+                <p>Romantic city with historic landmarks.</p>
+            </div>
+
+            <div class="card">
+                <h3>Bali</h3>
+                <p>Island paradise known for beaches and temples.</p>
+            </div>
+
+            <div class="card">
+                <h3>Dubai</h3>
+                <p>Modern luxury city with iconic skyscrapers.</p>
+            </div>
+
+            <div class="card">
+                <h3>Switzerland</h3>
+                <p>Beautiful mountains and scenic landscapes.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PACKAGES PAGE -->
+
+    <section id="packages">
+
+        <h2 class="section-title">Travel Packages</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Bali Beach Escape</h3>
+                <p>₹45,000</p>
+                <p>5 Days / 4 Nights</p>
+                <button onclick="scrollToBooking('Bali')">Book</button>
+            </div>
+
+            <div class="card">
+                <h3>Dubai Luxury Trip</h3>
+                <p>₹70,000</p>
+                <p>4 Days / 3 Nights</p>
+                <button class="btn" onclick="scrollToBooking('Dubai')">Book</button>
+            </div>
+
+            <div class="card">
+                <h3>Switzerland Alps Tour</h3>
+                <p>₹1,20,000</p>
+                <p>7 Days</p>
+                <button onclick="scrollToBooking('Switzerland')">Book</button>
+            </div>
+
+            <div class="card">
+                <h3>Paris Romantic Getaway</h3>
+                <p>₹95,000</p>
+                <p>6 Days</p>
+                <button onclick="scrollToBooking('Paris')">Book</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BOOKING PAGE -->
+
+    <section id="booking">
+            <h2 class="section-title">Travel Booking</h2>
+
+            <form id="bookingForm">
+
+                <input id="name" placeholder="Full Name" required>
+
+                <input id="email" placeholder="Email" required>
+
+                <input id="phone" placeholder="Phone Number" required>
+
+                <input id="departure" placeholder="Departure City">
+
+                <input id="destination" placeholder="Destination">
+
+                <input id="date" type="date">
+
+                <input id="travelers" type="number" placeholder="Number of Travelers">
+
+                <select id="package">
+                    <option>Bali</option>
+                    <option>Dubai</option>
+                    <option>Switzerland</option>
+                    <option>Paris</option>
+                </select>
+
+                <textarea id="notes" style="resize:none" placeholder="Additional Notes"></textarea>
+
+                <button class="btn" type="submit">Book Now</button>
+
+            </form>
+    </section>
+
+
+
+    <!-- CONTACT PAGE -->
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <p class="text-center">
+            Email: travel@world.com <br>
+            Phone: +91 9999999999
+        </p>
+
+    </section>
+
+
+
+    <footer>
+        Travel Booking Website © 2026
+    </footer>
+
+
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

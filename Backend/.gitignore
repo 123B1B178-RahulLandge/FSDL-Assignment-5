@@ -1,0 +1,16 @@
+.idea/             # Ignore JetBrains IDE project settings
+.vscode/           # Ignore VS Code settings
+.DS_Store          # Ignore macOS system files
+Thumbs.db          # Ignore Windows thumbnail cache files
+
+*.log              # Ignore all log files
+*.tmp              # Ignore all temporary files
+/build/            # Ignore the build directory at the root level
+/dist/             # Ignore the distribution directory
+*.exe              # Ignore all executable files
+
+node_modules/      # Ignore Node.js dependencies
+
+.env               # Ignore local environment variable files (often contains secrets)
+
+!important.log     # Re-include a specific log file that was ignored by *.log
