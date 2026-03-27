@@ -52,22 +52,30 @@
         <div class="cards">
 
             <div class="card">
+                <span>New</span>
+                <img src="./images/paris.png" alt="ifel-tower image" />
                 <h3>Paris</h3>
                 <p>City of love</p>
             </div>
 
             <div class="card">
+                <span>Famous</span>
+                <img src="./images/bali.png" alt="ifel-tower image" />
                 <h3>Bali</h3>
                 <p>Beautiful beaches</p>
             </div>
 
             <div class="card">
+                <span>New</span>
+                <img src="./images/dubai.png" alt="ifel-tower image" />
                 <h3>Dubai</h3>
                 <p>Luxury travel</p>
             </div>
 
             <div class="card">
-                <h3>Maldives</h3>
+                <span>New</span>
+                <img src="./images/lakshdeep.png" alt="ifel-tower image" />
+                <h3>Lakshdeep</h3>
                 <p>Tropical paradise</p>
             </div>
 
@@ -86,23 +94,35 @@
         <div class="cards">
 
             <div class="card">
-                <h3>Paris</h3>
-                <p>Romantic city with historic landmarks.</p>
+                <div style="padding:10px;">
+                    <h3>Paris</h3>
+                    <p>Romantic city with historic landmarks.</p>
+                </div>
+
             </div>
 
             <div class="card">
-                <h3>Bali</h3>
-                <p>Island paradise known for beaches and temples.</p>
+                <div style="padding:10px;">
+                    <h3>Bali</h3>
+                    <p>Island paradise known for beaches and temples.</p>
+                </div>
+
             </div>
 
             <div class="card">
-                <h3>Dubai</h3>
-                <p>Modern luxury city with iconic skyscrapers.</p>
+                <div style="padding:10px;">
+                    <h3>Dubai</h3>
+                    <p>Modern luxury city with iconic skyscrapers.</p>
+                </div>
+
             </div>
 
             <div class="card">
-                <h3>Switzerland</h3>
-                <p>Beautiful mountains and scenic landscapes.</p>
+                <div style="padding:10px;">
+                    <h3>Switzerland</h3>
+                    <p>Beautiful mountains and scenic landscapes.</p>
+                </div>
+
             </div>
 
         </div>
@@ -120,33 +140,48 @@
         <div class="cards">
 
             <div class="card">
-                <h3>Bali Beach Escape</h3>
-                <p>₹45,000</p>
-                <p>5 Days / 4 Nights</p>
-                <button onclick="scrollToBooking('Bali')">Book</button>
+                <img src="./images/packages/bali.png" alt="ifel-tower image" />
+                <div style="padding:10px 5px;">
+                    <h3>Bali Beach Escape</h3>
+                    <p>₹45,000</p>
+                    <p>5 Days / 4 Nights</p>
+                    <button style="width:100%;border-radius:20px;" class="btn"
+                        onclick="scrollToBooking('Bali')">Book</button>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Dubai Luxury Trip</h3>
-                <p>₹70,000</p>
-                <p>4 Days / 3 Nights</p>
-                <button class="btn" onclick="scrollToBooking('Dubai')">Book</button>
+                <img src="./images/packages/dubai.png" alt="ifel-tower image" />
+                <div style="padding:10px 5px;">
+                    <h3>Dubai Luxury Trip</h3>
+                    <p>₹70,000</p>
+                    <p>4 Days / 3 Nights</p>
+                    <button style="width:100%;border-radius:20px;" class="btn"
+                        onclick="scrollToBooking('Dubai')">Book</button>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Switzerland Alps Tour</h3>
-                <p>₹1,20,000</p>
-                <p>7 Days</p>
-                <button onclick="scrollToBooking('Switzerland')">Book</button>
+                <img src="./images/packages/switzerland.png" alt="ifel-tower image" />
+                <div style="padding:10px 5px;">
+                    <h3>Switzerland Alps Tour</h3>
+                    <p>₹1,20,000</p>
+                    <p>7 Days</p>
+                    <button style="width:100%;border-radius:20px;" class="btn"
+                        onclick="scrollToBooking('Switzerland')">Book</button>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Paris Romantic Getaway</h3>
-                <p>₹95,000</p>
-                <p>6 Days</p>
-                <button onclick="scrollToBooking('Paris')">Book</button>
+                <img src="./images/packages/paris.png" alt="ifel-tower image" />
+                <div style="padding:10px 5px;">
+                    <h3>Paris Romantic Getaway</h3>
+                    <p>₹95,000</p>
+                    <p>6 Days</p>
+                    <button style="width:100%;border-radius:20px;" class="btn"
+                        onclick="scrollToBooking('Paris')">Book</button>
+                </div>
             </div>
-
         </div>
 
     </section>
@@ -155,58 +190,71 @@
 
     <!-- BOOKING PAGE -->
 
-    <section id="booking">
-            <h2 class="section-title">Travel Booking</h2>
+    <section id="booking" class="book-sec">
+        <h2 class="section-title">Travel Booking</h2>
 
-            <form id="bookingForm">
+        <form id="bookingForm">
 
-                <input id="name" placeholder="Full Name" required>
+            <input id="name" placeholder="Full Name" required>
 
-                <input id="email" placeholder="Email" required>
+            <input id="email" placeholder="Email" required>
 
-                <input id="phone" placeholder="Phone Number" required>
+            <input id="phone" placeholder="Phone Number" required>
 
-                <input id="departure" placeholder="Departure City">
+            <input id="departure" placeholder="Departure City">
 
-                <input id="destination" placeholder="Destination">
+            <input id="destination" placeholder="Destination">
 
-                <input id="date" type="date">
+            <input id="date" type="date">
 
-                <input id="travelers" type="number" placeholder="Number of Travelers">
+            <input id="travelers" type="number" placeholder="Number of Travelers">
 
-                <select id="package">
-                    <option>Bali</option>
-                    <option>Dubai</option>
-                    <option>Switzerland</option>
-                    <option>Paris</option>
-                </select>
+            <select id="package">
+                <option>Bali</option>
+                <option>Dubai</option>
+                <option>Switzerland</option>
+                <option>Paris</option>
+            </select>
 
-                <textarea id="notes" style="resize:none" placeholder="Additional Notes"></textarea>
+            <textarea id="notes" style="resize:none" placeholder="Additional Notes"></textarea>
 
-                <button class="btn" type="submit">Book Now</button>
+            <button class="btn" type="submit">Book Now</button>
 
-            </form>
+        </form>
     </section>
 
 
 
     <!-- CONTACT PAGE -->
-
-    <section id="contact">
-
-        <h2 class="section-title">Contact Us</h2>
-
-        <p class="text-center">
-            Email: travel@world.com <br>
-            Phone: +91 9999999999
-        </p>
-
-    </section>
-
-
-
     <footer>
-        Travel Booking Website © 2026
+        <section id="contact">
+            <div>
+                <div>
+                    <h1>TravelWorld</h1>
+                </div>
+                <div style="max-width:250px;">
+                    We give the perfect experience of your dream Trip.Find the perfect getaway with curated travel packages and personalized support.
+                </div>
+            </div>
+            <div class="con-div">
+                <span>Quick Links</span>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>Contact Us</span>
+                <p>
+                    Email: travel@world.com <br>
+                    Phone: +91 9999999999
+                </p>
+            </div>
+
+        </section>
+        <span style="display:block;font-size:13px;width:100%;text-align:center">Travel Booking Website © 2026</span>
     </footer>
 
 
